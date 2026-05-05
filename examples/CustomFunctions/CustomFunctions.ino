@@ -1,6 +1,6 @@
 /*
  * CustomFunctions.ino
- * MathParser — Custom User-Defined Functions
+ * MathParser Custom User-Defined Functions
  *
  * Register your own C functions into the expression engine.
  * They can then be called by name inside any expression string.
