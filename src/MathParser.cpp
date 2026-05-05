@@ -28,10 +28,10 @@ static double b_ceil(double a)         {return ceil(a);}
 static double b_flor(double a)         {return floor(a);}
 static double b_rnd (double a)         {return round(a);}
 static double b_sqrt(double a)         {return sqrt(a);}
-static double b_cbrt(double a)         {return cbrt(a);}
+static double b_cbrt(double a)         {return pow(a, 1.0/3.0);}
 static double b_exp (double a)         {return exp(a);}
 static double b_log (double a)         {return log(a);}
-static double b_lg2 (double a)         {return log2(a);}
+static double b_lg2 (double a)         {return log(a) / 0.69314718056;}
 static double b_lg10(double a)         {return log10(a);}
 static double b_sin (double a)         {return sin(a);}
 static double b_cos (double a)         {return cos(a);}
