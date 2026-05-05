@@ -1,6 +1,6 @@
-# MathParser — Arduino & ESP32
+# MathParser for Arduino & ESP32
 
-> Evaluate math expressions from strings at runtime — no dependencies, no heap beyond the parser itself.
+> Evaluate math expressions from strings at runtime   no dependencies, no heap beyond the parser itself.
 
 [![Arduino Library](https://img.shields.io/badge/Arduino-Library-blue?logo=arduino)](https://github.com/meerzafarnoohani/MathParser)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
@@ -10,7 +10,7 @@
 
 ## What is MathParser?
 
-MathParser lets your Arduino evaluate a math expression stored as a string — at runtime. Instead of hardcoding `y = x * 1.8 + 32`, you store `"x * 1.8 + 32"` in EEPROM and evaluate it dynamically. Change the formula without reflashing.
+MathParser lets your Arduino evaluate a math expression stored as a string   at runtime. Instead of hardcoding `y = x * 1.8 + 32`, you store `"x * 1.8 + 32"` in EEPROM and evaluate it dynamically. Change the formula without reflashing.
 
 **Real-world use cases:**
 - 🌡️ Sensor calibration curves stored in EEPROM/SPIFFS
@@ -80,7 +80,7 @@ te.setVariable("y", &y);
 te.compile("sqrt(x^2 + y^2)");   // compile once
 
 x = 3.0; y = 4.0;
-double dist = te.eval();          // 5.0 — variables read at eval time
+double dist = te.eval();          // 5.0   variables read at eval time
 
 x = 5.0; y = 12.0;
 dist = te.eval();                 // 13.0
@@ -133,8 +133,8 @@ te.compile("x^2 + 1");             // returns bool
 te.eval();                          // returns double
 
 // Error reporting
-te.isValid();                       // bool — last compile succeeded?
-te.errorPosition();                 // int  — 0 = no error
+te.isValid();                       // bool last compile succeeded?
+te.errorPosition();                 // int  0 = no error
 te.printError("x^2 + 1");          // print arrow pointing at error
 
 // Reset
@@ -157,7 +157,7 @@ te.reset();                         // clear expression + all bindings
 
 - Stack usage per `MathParser` instance: ~200 bytes (8 variable slots)
 - Parser uses heap transiently during `compile()`, then frees it
-- `eval()` uses no heap — walks the compiled expression tree
+- `eval()` uses no heap   walks the compiled expression tree
 
 ---
 
@@ -175,11 +175,11 @@ te.reset();                         // clear expression + all bindings
 
 ## Credits
 
-Original MathParser by **Lewis Van Winkle** — [github.com/codeplea/MathParser](https://github.com/codeplea/MathParser) (zlib licence).
-Arduino/ESP32 port and C++ wrapper by **Meer Zafarullah Noohani** — [github.com/meerzafarnoohani](https://github.com/meerzafarnoohani).
+Original MathParser by **Lewis Van Winkle**   [github.com/codeplea/MathParser](https://github.com/codeplea/MathParser) (zlib licence).
+Arduino/ESP32 port and C++ wrapper by **Meer Zafarullah Noohani**   [github.com/meerzafarnoohani](https://github.com/meerzafarnoohani).
 
 ---
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+MIT   see [LICENSE](LICENSE).
