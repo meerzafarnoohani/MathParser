@@ -1,6 +1,6 @@
 /*
  * WithVariables.ino
- * MathParser — Expressions with Bound Variables
+ * MathParser Expressions with Bound Variables
  *
  * Compile an expression once, change variable values, evaluate repeatedly.
  * This is the most common real-world use case:
