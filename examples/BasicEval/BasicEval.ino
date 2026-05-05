@@ -1,9 +1,9 @@
 /*
  * BasicEval.ino
- * MathParser — Basic Expression Evaluation
+ * MathParser Basic Expression Evaluation
  *
  * Demonstrates evaluating math expressions from strings at runtime.
- * No variables, no custom functions — just plain math.
+ * No variables, no custom functions just plain math.
  *
  * Use cases:
  *   - Config-driven formulas stored in EEPROM or SPIFFS
